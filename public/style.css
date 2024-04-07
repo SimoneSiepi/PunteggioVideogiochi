@@ -1,0 +1,73 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: auto 1fr; /* Due colonne, la prima con dimensioni automatiche e la seconda che occupa lo spazio rimanente */
+    align-items: center; /* Allineamento verticale al centro */
+    background-color: chocolate;
+  }
+  
+.navbar_ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin-left: 20px;
+}
+  
+.navbar_ul_link {
+  margin-right: 10px; /* Spazio tra i link */
+}
+  
+.navbar_ul_link a {
+  text-decoration: none;
+  color: black;
+}
+
+footer{
+  margin-top: auto;
+  text-align: center;
+  background-color: chocolate;
+}
+
+.containerImage{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adatta il numero di colonne in base alla larghezza disponibile */
+  gap: 20px; /* Spazio tra le immagini */
+  align-items: center;
+ }
+ 
+ .container_item{
+  display: flex;
+  flex-direction: column; /* Disponi il contenuto in una colonna */
+  align-items: center; /* Allinea orizzontalmente il contenuto al centro */
+ }
+ 
+ .container_item img {
+  width: 100%; /* Ridimensiona l'immagine per adattarsi al contenitore */
+  max-width: 200px; /* Limita la larghezza massima dell'immagine */
+  height: auto; /* Mantiene l'aspetto dell'immagine */
+ }
+ 
+ .container_item .imageName {
+  text-align: center; /* Allinea il nome al centro */
+  margin-top: 10px; /* Spazio tra l'immagine e il nome */
+ }
+
+ table{
+  margin-top: 10px;
+  border-collapse: collapse;
+ }
+
+ th,td{
+  text-align: left;
+  border: 2px solid black;
+ }
+
+
+  

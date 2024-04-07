@@ -1,0 +1,10 @@
+extends layout
+
+block contenuto
+    if giochi
+        .containerImage
+            each gioco in giochi
+                figure.container_item
+                    a(href=`/games/${giochi.indexOf(gioco)}`)
+                        img(src=gioco.imgPath, alt=`gioco: ${giochi.indexOf(gioco)}`)
+                    figcaption.imageName=gioco.nomeVideoGioco   

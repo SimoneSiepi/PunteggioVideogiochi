@@ -1,0 +1,51 @@
+[
+  {
+    "nomeVideoGioco": "space invaders",
+    "imgPath": "../img/spaceInvaders.jpg",
+    "absoluteHighestScore": 95,
+    "giocatori": [
+      {
+        "nome": "ss",
+        "cognome": "ee",
+        "HighestScore": 95
+      },
+      {
+        "nome": "marco",
+        "cognome": "ss",
+        "HighestScore": 50
+      },
+      {
+        "nome": "dd",
+        "cognome": "dd",
+        "HighestScore": "50"
+      },
+      {
+        "nome": "simone",
+        "cognome": "siepi",
+        "HighestScore": 49
+      },
+      {
+        "nome": "ss",
+        "cognome": "ss",
+        "HighestScore": "19"
+      },
+      {
+        "nome": "ss",
+        "cognome": "ff",
+        "HighestScore": 15
+      }
+    ]
+  },
+  {
+    "nomeVideoGioco": "snake",
+    "imgPath": "../img/snake.png",
+    "absoluteHighestScore": 20,
+    "giocatori": [
+      {
+        "nome": "simone",
+        "cognome": "siepi",
+        "HighestScore": 20
+      }
+    ]
+  }
+]

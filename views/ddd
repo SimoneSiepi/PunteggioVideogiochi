@@ -1,0 +1,30 @@
+extends layout
+
+block contenuto
+    if gioco 
+        h2= gioco.nomeVideoGioco
+        figure
+            img(src=`${gioco.imgPath}`, alt="")
+        form(action=`/inserisciPunteggio/${index}`, method="post")
+            label(for="nome") nome
+            br
+            input(type="text" id="nome" name="nome")
+            br
+            label(for="cognome") cognome
+            br
+            input(type="text" id="cognome" name="cognome")
+            br
+            input(type="hidden" name="score" id="score" value=Math.floor(Math.random() * 101))
+            input(type="submit", value="invia")
+        if giocatori
+            br
+            table 
+                tr 
+                    th nome
+                    th cognome
+                    th punteggio
+                each giocatore in giocatori
+                    tr
+                        td= giocatore.nome 
+                        td= giocatore.cognome
+                        td= giocatore.HighestScore
